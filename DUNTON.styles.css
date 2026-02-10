@@ -72,10 +72,7 @@ table {
     box-sizing: border-box;
     line-height: 1.35;
 }
-body{
-    background-color: white;
-    color: black;
-}
+
 
 
 /* ----- CHECK FOR USER DARK MODE PREFERENCE ----- */
@@ -201,7 +198,7 @@ img{
 
 /* ---------- SMALL SCREEN STYLES ---------- */
 /* --------------- BEGIN SMALL SCREEN SIZES --------------- */
-@media only screen and (min-width: 620px){
+@media screen and (min-width: 620px){
         
     header, footer{
         background-color: var(--lime-green);
@@ -236,7 +233,7 @@ img{
 
 /* ---------- MEDIUM SCREEN STYLES ---------- */
 /* --------------- BEGIN MEDIUM SCREEN SIZES --------------- */
-@media only screen and (min-width: 705px) {
+@media screen and (min-width: 705px) {
     
     header, footer{
         background-color: var(--black);
@@ -271,7 +268,7 @@ img{
 
 /* ---------- LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN LARGE SCREEN SIZES --------------- */
-@media only screen and (min-width: 916px) {
+@media screen and (min-width: 916px) {
     
     header, footer{
         background-color: var(--lime-green);
@@ -312,7 +309,7 @@ img{
 
 /* ---------- ADJUSTING RESPONSIVE IMAGE SIZE ---------- */
 /* --------------- BEGIN RESPONSIVE IMAGE ADJUST SIZES --------------- */
-    @media (min-width: 1380px){
+    @media screen and (min-width: 1380px){
         img{
         width: 300px;
         max-width: 300px;
@@ -324,7 +321,7 @@ img{
 
 /* ---------- EXTRA LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN EXTRA LARGE SCREEN SIZES --------------- */
-@media only screen and (min-width: 1430px){
+@media screen and (min-width: 1430px){
     header, footer{
         background-color: var(--orange);
         padding-left: 5%;
