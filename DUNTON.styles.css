@@ -1,6 +1,11 @@
 /* Angelou Dunton */
 
 /* --------------- ADD CSS RESET TO THE FILE HERE --------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,6 +26,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -66,17 +72,19 @@ table {
     box-sizing: border-box;
     line-height: 1.35;
 }
-
+body{
+    background-color: white;
+    color: black;
+}
 
 
 /* ----- CHECK FOR USER DARK MODE PREFERENCE ----- */
 
 /* --------------- BEGIN USER PREFERS DARK COLOR SCHEME QUERY --------------- */
-@media (prefers-color-scheme: dark){
     /* CHANGE THE BODY'S BACKGROUND COLOR TO THE DARK GRAY IF THE USER PREFERS DARK MODE */
+@media (prefers-color-scheme: dark){
     body {
         background-color: var(--dark-gray);
-        color: var(--white);
     }
 }   /* --------------- END USER PREFERS DARK COLOR SCHEME QUERY --------------- */
 
@@ -193,7 +201,7 @@ img{
 
 /* ---------- SMALL SCREEN STYLES ---------- */
 /* --------------- BEGIN SMALL SCREEN SIZES --------------- */
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 620px){
         
     header, footer{
         background-color: var(--lime-green);
@@ -228,7 +236,7 @@ img{
 
 /* ---------- MEDIUM SCREEN STYLES ---------- */
 /* --------------- BEGIN MEDIUM SCREEN SIZES --------------- */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 705px) {
     
     header, footer{
         background-color: var(--black);
@@ -263,7 +271,7 @@ img{
 
 /* ---------- LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN LARGE SCREEN SIZES --------------- */
-@media only screen and (min-width: 889px) {
+@media only screen and (min-width: 916px) {
     
     header, footer{
         background-color: var(--lime-green);
@@ -304,17 +312,19 @@ img{
 
 /* ---------- ADJUSTING RESPONSIVE IMAGE SIZE ---------- */
 /* --------------- BEGIN RESPONSIVE IMAGE ADJUST SIZES --------------- */
-    /* img{
+    @media (min-width: 1380px){
+        img{
         width: 300px;
         max-width: 300px;
-    } */
+        }
+    }  
 /* --------------- END RESPONSIVE IMAGE ADJUST SIZES --------------- */
 
 
 
 /* ---------- EXTRA LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN EXTRA LARGE SCREEN SIZES --------------- */
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1430px){
     header, footer{
         background-color: var(--orange);
         padding-left: 5%;
